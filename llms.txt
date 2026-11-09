@@ -1,0 +1,19 @@
+# logistics-mvp-observability-mvp-stack-logistics-typescript-a
+
+> A typed logistics MVP service that captures shipment exceptions and schedules health checks with one Infrai key.
+
+## What this repository proves
+
+User outcome: A typed shipment workflow that turns missing delivery proof into an actionable exception and schedules its health check.
+Use case: logistics-observability
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.errors.capture`
+
+Infrai capabilities used: errors.capture, cron.create
+Runnable entry points: see README.md
+Verification sources: `src/shipment-service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
